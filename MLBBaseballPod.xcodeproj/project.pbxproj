@@ -10,6 +10,7 @@
 		95341EF920633B6D00995BE4 /* MLBBaseballPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95341EEF20633B6D00995BE4 /* MLBBaseballPod.framework */; };
 		95341EFE20633B6D00995BE4 /* MLBBaseballPodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95341EFD20633B6D00995BE4 /* MLBBaseballPodTests.swift */; };
 		95341F0020633B6E00995BE4 /* MLBBaseballPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 95341EF220633B6D00995BE4 /* MLBBaseballPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95B787A2206343F600EB39C2 /* MLBAMGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B787A1206343F600EB39C2 /* MLBAMGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		95341EF820633B6D00995BE4 /* MLBBaseballPodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLBBaseballPodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95341EFD20633B6D00995BE4 /* MLBBaseballPodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBBaseballPodTests.swift; sourceTree = "<group>"; };
 		95341EFF20633B6E00995BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95B787A1206343F600EB39C2 /* MLBAMGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBAMGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		95341EF120633B6D00995BE4 /* MLBBaseballPod */ = {
 			isa = PBXGroup;
 			children = (
+				95B787A0206343E200EB39C2 /* Models */,
 				95341EF220633B6D00995BE4 /* MLBBaseballPod.h */,
 				95341EF320633B6D00995BE4 /* Info.plist */,
 			);
@@ -84,6 +87,14 @@
 				95341EFF20633B6E00995BE4 /* Info.plist */,
 			);
 			path = MLBBaseballPodTests;
+			sourceTree = "<group>";
+		};
+		95B787A0206343E200EB39C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95B787A1206343F600EB39C2 /* MLBAMGame.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				TargetAttributes = {
 					95341EEE20633B6D00995BE4 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					95341EF720633B6D00995BE4 = {
@@ -196,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B787A2206343F600EB39C2 /* MLBAMGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +347,7 @@
 		95341F0420633B6E00995BE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seubjoh.MLBBaseballPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +370,7 @@
 		95341F0520633B6E00995BE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +392,7 @@
 		95341F0720633B6E00995BE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UZJ8754DYA;
 				INFOPLIST_FILE = MLBBaseballPodTests/Info.plist;
@@ -390,6 +407,7 @@
 		95341F0820633B6E00995BE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UZJ8754DYA;
 				INFOPLIST_FILE = MLBBaseballPodTests/Info.plist;
