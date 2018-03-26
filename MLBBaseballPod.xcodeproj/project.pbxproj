@@ -10,6 +10,7 @@
 		95341EF920633B6D00995BE4 /* MLBBaseballPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95341EEF20633B6D00995BE4 /* MLBBaseballPod.framework */; };
 		95341EFE20633B6D00995BE4 /* MLBBaseballPodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95341EFD20633B6D00995BE4 /* MLBBaseballPodTests.swift */; };
 		95341F0020633B6E00995BE4 /* MLBBaseballPod.h in Headers */ = {isa = PBXBuildFile; fileRef = 95341EF220633B6D00995BE4 /* MLBBaseballPod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		958F66C8206721BA00DFC421 /* MLBAMRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958F66C7206721BA00DFC421 /* MLBAMRequester.swift */; };
 		95B787A2206343F600EB39C2 /* MLBAMGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B787A1206343F600EB39C2 /* MLBAMGame.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		95341EF820633B6D00995BE4 /* MLBBaseballPodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLBBaseballPodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95341EFD20633B6D00995BE4 /* MLBBaseballPodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBBaseballPodTests.swift; sourceTree = "<group>"; };
 		95341EFF20633B6E00995BE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		958F66C7206721BA00DFC421 /* MLBAMRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBAMRequester.swift; sourceTree = "<group>"; };
 		95B787A1206343F600EB39C2 /* MLBAMGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBAMGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 		95341EF120633B6D00995BE4 /* MLBBaseballPod */ = {
 			isa = PBXGroup;
 			children = (
+				958F66C62067219A00DFC421 /* Interface */,
 				95B787A0206343E200EB39C2 /* Models */,
 				95341EF220633B6D00995BE4 /* MLBBaseballPod.h */,
 				95341EF320633B6D00995BE4 /* Info.plist */,
@@ -87,6 +90,14 @@
 				95341EFF20633B6E00995BE4 /* Info.plist */,
 			);
 			path = MLBBaseballPodTests;
+			sourceTree = "<group>";
+		};
+		958F66C62067219A00DFC421 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				958F66C7206721BA00DFC421 /* MLBAMRequester.swift */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 		95B787A0206343E200EB39C2 /* Models */ = {
@@ -208,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958F66C8206721BA00DFC421 /* MLBAMRequester.swift in Sources */,
 				95B787A2206343F600EB39C2 /* MLBAMGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
